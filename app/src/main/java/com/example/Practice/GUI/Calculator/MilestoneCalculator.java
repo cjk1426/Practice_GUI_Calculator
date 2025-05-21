@@ -211,15 +211,15 @@ public class MilestoneCalculator extends javax.swing.JFrame {
             int taGrd = Integer.parseInt(txtTAGrade.getText());
 
             // Validate the input ranges
-            if (ms1G < 1 || ms1G > 25) {
+            if (ms1G < 0 || ms1G > 25) {
                 JOptionPane.showMessageDialog(null, "Milestone 1 grade must be between 1 and 25.");
                 return;
             }
-            if (ms2G < 1 || ms2G > 40) {
+            if (ms2G < 0 || ms2G > 40) {
                 JOptionPane.showMessageDialog(null, "Milestone 2 grade must be between 1 and 40.");
                 return;
             }
-            if (taGrd < 1 || taGrd > 35) {
+            if (taGrd < 0 || taGrd > 35) {
                 JOptionPane.showMessageDialog(null, "Terminal Assessment grade must be between 1 and 35.");
                 return;
             }
